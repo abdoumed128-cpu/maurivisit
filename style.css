@@ -516,3 +516,56 @@ footer {
 .submit-button:hover {
     background-color: var(--color-primary);
 }
+/* --- Styles pour les téléphones (écran de 768px ou moins) --- */
+@media (max-width: 768px) {
+    
+    /* 1. Entête (Header) */
+    .main-header {
+        flex-direction: column; /* Empile l'image/logo et la navigation */
+        padding: 15px 5%;
+        text-align: center;
+    }
+
+    /* 2. Navigation (Nav) */
+    nav ul {
+        flex-direction: column; /* Les liens s'affichent les uns sous les autres */
+        gap: 5px; /* Réduit l'espace entre les liens */
+        margin-top: 10px;
+    }
+
+    nav ul li a {
+        padding: 8px 10px; /* Plus de surface cliquable */
+        display: block; /* S'étend sur toute la largeur */
+    }
+
+    /* 3. Logo/Titre */
+    .logo-container {
+        justify-content: center; /* Centre le logo et le titre */
+    }
+}
+/* ... dans le bloc @media (max-width: 768px) { ... */
+
+    /* 5. Réduction des Marges Générales */
+    .hero-section, 
+    .services-grid-section,
+    .page-intro,
+    .about-section,
+    .form-container {
+        padding: 30px 5%; /* Réduit le padding pour plus d'espace de contenu */
+    }
+
+    /* 6. Réduction des Tailles de Polices */
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    /* 7. Image du Hero */
+    .hero-section img {
+        height: 250px; /* Réduit la hauteur des grandes images d'en-tête */
+    }
+
+/* ... fin du bloc @media (max-width: 768px) { ... */
